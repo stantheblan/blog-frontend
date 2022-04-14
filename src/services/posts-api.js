@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const URL = 'http://localhost:3001/posts/'
+const URL = 'https://stan-blog-api.herokuapp.com/posts/'
 
 // Get all posts
 export const getPosts = () => {
