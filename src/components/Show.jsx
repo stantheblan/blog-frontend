@@ -38,29 +38,32 @@ export function Show() {
   }
 
   return (
-    <div>
-      <h1>{data.title}</h1>
-      <h3>{data.body}</h3>
+    <div className='post'>
+      <div className='content'>
+        <h1>{data.title}</h1>
+        <div className='body'><p>{data.body}</p></div>
+      </div><br/>
       <button onClick={() => nav(`/${id}/edit`)}>Edit Post</button>
-      <div>
+      <div className='comments'>
         {
           comments.map((comment, i) => {
             return (
-              <div key={i}>
-                <h2>Name: {comment.name}</h2>
-                <p>Comment: {comment.message}</p>
+              <div key={i} className='comment'>
+                <h3>{comment.name}: </h3>
+                <p>{comment.message}</p>
               </div>
             )
           })
         }
+        </div>
         <form onSubmit={addAComment}>
           <label> Name: </label>
           <input type='text' name='name' /> <br />
           <label> Comments: </label><br />
-          <textarea cols='40' rows='10' name='message'></textarea><br />
+          <textarea cols='40' rows='3' name='message'></textarea><br />
           <input type='submit' value={'Submit'} />
         </form>
-      </div>
+      
     </div>
   )
 }

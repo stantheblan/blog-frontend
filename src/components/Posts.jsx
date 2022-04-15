@@ -9,15 +9,15 @@ export function Posts() {
   }, [data])
 
   return (
-    <div>
+    <div className='blog'>
       <h1>Where's Waldo</h1><br />
-      <div>
+      <div className='postContainer'>
         {
           data.map((e, i) => {
             return (
-              <div key={i}>
+              <div key={i} className='homePost'>
                 <h2><a href={`/${e._id}`}>{e.title}</a></h2>
-                <h3>{e.body}</h3>
+                <p>{e.body}</p>
               </div>
             )
           })

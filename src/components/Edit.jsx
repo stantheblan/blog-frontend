@@ -28,14 +28,15 @@ export function Edit() {
   }
 
   return (
-    <div className='main'>
+    <div className='post'>
       <h1>Edit Post</h1>
       <form onSubmit={editPosts}>
-        <input type='text' name='title' defaultValue={data.title} /><br />
+        Location:<input type='text' name='title' defaultValue={data.title} /><br />
         <textarea defaultValue={data.body} name='body' cols='50' rows='10' ></textarea><br />
         <input type='submit' />
       </form>
       <button type='submit' onClick={deletePosts}>Delete</button>
+      <br/>
     </div>
   )
 }
