@@ -1,3 +1,12 @@
+# Blog Front-End
+This repo is for the front-end of my blog site located at [https://elevatedwaldo.herokuapp.com/](https://elevatedwaldo.herokuapp.com/)
+The back-end for this site is located [here](https://stan-blog-api.herokuapp.com/posts)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
